@@ -5,9 +5,9 @@ In this tutorial, we will create a simple pull-to-refresh animation that is achi
 ![Final pull to animate](finalPullToAnimate.gif)
 
 ###Starter
-We will start with a starter project that includes a `UITableView and a UIRefreshControl.
+We will start with a starter project that includes a `UITableView` and a `UIRefreshControl`.
 
-ADD URL TO SAMPLE PROJECT 	HERE
+[Click here to download the starter project](PullToMakeAnimations-starter.zip)
 
 This starter project includes the following:
 
@@ -125,5 +125,7 @@ Run the app and pull to animate!
 
 To personalize the animation, try changing the numbers in `scrollViewDidScroll`. We are using Arithmetic and geometric functions to achieve that animation. Adding your own functions can push the boundries of what seems possible with just a few lines of code.
 
+
+[Click here to download the final project](PullToMakeAnimations-Final.zip)
 ###Credits
 We got the awesome dolphin asset from [icons8.com](https://icons8.com "icons8").
