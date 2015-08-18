@@ -23,7 +23,7 @@ Let's start writing code. Let's get one of our assets on the screen. Add the fol
 
 	var makeLogo : UIImageView!
 	
-Add this method to load the image and display it:
+Add this method your `CoolViewController` class to load the image and display it:
 
 	func setupMakeLogo() {
         makeLogo = UIImageView(image: UIImage(named: "make"))
@@ -31,7 +31,7 @@ Add this method to load the image and display it:
         self.tableView.addSubview(makeLogo)
     }
 
-Lastly, call `setupMakeLogo` at the end of your `viewDidLoad` method to make it look like this:
+Lastly, call `setupMakeLogo` at the end of your `viewDidLoad` method, making it look like the following:
 
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +53,7 @@ Now that we are ready to get our image moving, we need a way to know in real-tim
   	   	println(y)
 	}
 
-Run your app in the simulator and you will notice that now you can see the how far you are scrolling (printed in the console).
+Run your app in the simulator and you will notice that now you can see how far you are scrolling (printed in the console).
 
 ###Make It Move
 
@@ -82,9 +82,7 @@ Let's add a `UIImageView` for our dolphin. Add this line to the top of your `Coo
 
 	var dolphin : UIImageView!
 	
-and add the following lines to the end of your `viewDidLoad`:
-	
-Add this method to load the image and display it:
+Add this method to your `CoolViewController` class to load the image and display it:
 
 	func setupDolphin() {
         let dolphinImage = UIImage(named: "dolphin")!
@@ -107,7 +105,7 @@ Lastly, call `setupDolphin` at the end of your `viewDidLoad` method, making it l
     
 ###Let's Animate Everything
 
-To bring everything together nicely, replace your `scrollViewDidScroll` method to look like the following:
+To bring everything together nicely, replace your `scrollViewDidScroll` method to make it look like the following:
 
 	override func scrollViewDidScroll(scrollView: UIScrollView) {
         let y = scrollView.contentOffset.y
